@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+}
+
+.logo {
+    width: 100px; /* Adjust width as needed */
+    float: left;
+}
+
+.search {
+    flex: 1;
+    margin: 0 20px; /* Add margin as needed */
+    float: right;
+    font-size: 20px;
+    border: solid 0.3m #000000;
+    border-radius: 2.5em;
+
+}
+
+.user-profile {
+    position: relative;
+   
+}
+
+
+
+.user-profile .profile-circle {
+    width: 50px; /* Change width to desired size */
+    height: 50px; /* Change height to desired size */
+    border-radius: 50%; /* Make it a perfect circle */
+    background-color: #000000;
+    /* Remove background-color from .user-profile .profile-circle */
+}
+
+.user-profile .profile-popup {
+    position: absolute;
+    top: 60px; /* Adjust distance from profile circle */
+    right: 0; /* Adjust distance from right */
+    background-color: #fff;
+    border: 1px solid #333;
+    padding: 0px;
+    display: none;
+}
+
+.user-profile .profile-popup.show {
+    display: block;
+}
+
+#sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    position: fixed;
+    top: 80px; /* Adjust distance from the top */
+    bottom: 0;
+    padding-top: 20px;
+    left: 0;
+}
+
+#sidebar a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+#content {
+    margin-top: 10px; /* Adjust margin to accommodate the fixed header */
+    margin-left: 10px; /* Adjust margin to match the sidebar width */
+    padding: 20px;
+    position: fixed;
+    top: 80px; /* Adjust to match the height of the header */
+    left: 200px; /* Adjust to match the width of the sidebar */
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.profile-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.profile-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.profile-menu a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block;
+}
